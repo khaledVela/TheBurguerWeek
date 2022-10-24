@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/hamburguesaName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/lblProductPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nombre Producto" />
+
+    <TextView
+        android:id="@+id/lblProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="55" />
+
+    <Button
+        android:id="@+id/eliminaHamburguesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="72dp"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toEndOf="@+id/imagenHamburguesa"
+        app:layout_constraintTop_toBottomOf="@+id/editarHamburguesa" />
+
+    <Button
+        android:id="@+id/editarHamburguesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Editar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toEndOf="@+id/imagenHamburguesa"
+        app:layout_constraintTop_toBottomOf="@+id/RestaurantePertenece" />
+
+    <TextView
+        android:id="@+id/RestaurantePertenece"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/hamburguesaName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hamburguesaName"
+        tools:text="Tipo 1" />
+
+    <ImageView
+        android:id="@+id/imagenHamburguesa"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/RestaurantePertenece"
+        tools:layout_editor_absoluteX="8dp"
+        tools:srcCompat="@drawable/normal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

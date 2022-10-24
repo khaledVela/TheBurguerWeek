@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_personaFragment"
+            app:destination="@id/personaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_hamburguesaFragment"
+            app:destination="@id/hamburguesaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_reviewFragment2"
+            app:destination="@id/reviewFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_restauranteFragment2"
+            app:destination="@id/restauranteFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_listRestFragment"
+            app:destination="@id/listRestFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_formPersonaFragment"
+            app:destination="@id/formPersonaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hamburguesaFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.fragments.HamburguesaFragment"
+        android:label="fragment_hamburguesa"
+        tools:layout="@layout/fragment_hamburguesa" >
+        <action
+            android:id="@+id/action_hamburguesaFragment_to_formHamburguesaFragment"
+            app:destination="@id/formHamburguesaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.fragments.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review" >
+        <action
+            android:id="@+id/action_reviewFragment_to_formReviewFragment"
+            app:destination="@id/formReviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personaFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.fragments.PersonaFragment"
+        android:label="fragment_persona"
+        tools:layout="@layout/fragment_persona" >
+        <action
+            android:id="@+id/action_personaFragment_to_formPersonaFragment"
+            app:destination="@id/formPersonaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restauranteFragment2"
+        android:name="com.moviles.practicanavegacioncasera.ui.fragments.RestauranteFragment"
+        android:label="fragment_restaurante"
+        tools:layout="@layout/fragment_restaurante" >
+        <action
+            android:id="@+id/action_restauranteFragment2_to_formRestauranteFragment"
+            app:destination="@id/formRestauranteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formRestauranteFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.fragments.FormRestauranteFragment"
+        android:label="fragment_form_restaurante"
+        tools:layout="@layout/fragment_form_restaurante" />
+    <fragment
+        android:id="@+id/formPersonaFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.fragments.FormPersonaFragment"
+        android:label="fragment_form_persona"
+        tools:layout="@layout/fragment_form_persona" />
+    <fragment
+        android:id="@+id/formHamburguesaFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.fragments.FormHamburguesaFragment"
+        android:label="fragment_form_hamburguesa"
+        tools:layout="@layout/fragment_form_hamburguesa" />
+    <fragment
+        android:id="@+id/formReviewFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.fragments.FormReviewFragment"
+        android:label="fragment_form_review"
+        tools:layout="@layout/fragment_form_review" />
+    <fragment
+        android:id="@+id/listRestFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.principal.fragments.ListRestFragment"
+        android:label="fragment_list_rest"
+        tools:layout="@layout/fragment_list_rest" >
+        <action
+            android:id="@+id/action_listRestFragment_to_listHambFragment"
+            app:destination="@id/listHambFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listHambFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.principal.fragments.ListHambFragment"
+        android:label="fragment_list_hamb"
+        tools:layout="@layout/fragment_list_hamb" >
+        <action
+            android:id="@+id/action_listHambFragment_to_verHambFragment"
+            app:destination="@id/verHambFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verHambFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.principal.fragments.VerHambFragment"
+        android:label="fragment_ver_hamb"
+        tools:layout="@layout/fragment_ver_hamb" >
+        <action
+            android:id="@+id/action_verHambFragment_to_anadirResenaFragment"
+            app:destination="@id/anadirResenaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anadirResenaFragment"
+        android:name="com.moviles.practicanavegacioncasera.ui.principal.fragments.AnadirResenaFragment"
+        android:label="fragment_anadir_resena"
+        tools:layout="@layout/fragment_anadir_resena" />
+</navigation>
